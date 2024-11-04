@@ -1,0 +1,268 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evitar desbordamiento horizontal */
+}
+
+/* Contenedor de fondo con imagen para el hero principal */
+.hero-background {
+    background-image: url('inicio-1.jpg'); /* Cambia por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 70vh; /* Altura del hero */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Hero principal */
+.hero {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Encabezado transparente y posicionado arriba */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px; /* Espaciado para centrar el contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.header .menu {
+    display: flex;
+    gap: 15px;
+    flex-grow: 1;
+    justify-content: center; /* Centra los enlaces de navegación */
+}
+
+.header .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header .menu a.active,
+.header .menu a:hover {
+    color: #FFA500;
+}
+
+.header .quote-button {
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: auto; /* Mueve el botón al extremo derecho */
+}
+
+/* Sección de industrias */
+.industries-section {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.industries-section h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #333;
+}
+
+.industries-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.industries-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.industry-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.industry-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.industry-card h3,
+.industry-card p {
+    position: relative;
+    z-index: 2;
+}
+
+.industry-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.industry-card p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Sección de llamada a la acción */
+.helping-section {
+    background-image: url('logo-mc.jpg'); /* Cambia por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.helping-section h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.helping-section p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background-color: #FFA500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.footer-social a {
+    color: #FFA500;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .header .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .industries-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .industry-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .helping-section h2 {
+        font-size: 2rem;
+    }
+
+    .header .quote-button {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

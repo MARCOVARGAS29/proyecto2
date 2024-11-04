@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evitar desbordamiento horizontal */
+}
+
+/* Contenedor de fondo para navbar y hero */
+.hero-background {
+    background-image: url('inicio-1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 70vh; /* Altura del héroe */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Navbar transparente y alineado */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px; /* Espaciado para centrar el contenido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.header .menu {
+    display: flex;
+    gap: 15px;
+    flex-grow: 1;
+    justify-content: center; /* Centra los enlaces de navegación */
+}
+
+.header .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header .menu a.active,
+.header .menu a:hover {
+    color: #FFA500;
+}
+
+.header .quote-button {
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: auto; /* Mueve el botón al extremo derecho */
+}
+
+/* Hero principal */
+.hero {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Estilos para las secciones de servicios con imágenes */
+.service-section {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.service-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.service-content-image {
+    width: 50%;
+    min-width: 300px;
+}
+
+.service-content-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-content-text {
+    width: 50%;
+    text-align: left;
+    min-width: 300px;
+}
+
+.service-content-text h2 {
+    color: #FFA500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.service-content-text h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.service-content-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Variación para invertir la posición de la imagen y el texto */
+.service-content-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Sección de llamada a la acción */
+.call-to-action {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.call-to-action h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.call-to-action p {
+    font-size: 1rem;
+    color: #bbb;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background-color: #FFA500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Sección "We are helping businesses..." */
+.helping-section {
+    background-image: url('logo-mc.jpg'); /* Cambia por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.helping-section h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.helping-section p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.footer-social a {
+    color: #FFA500;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .header .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header .quote-button {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .service-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-content-text,
+    .service-content-image {
+        width: 100%;
+    }
+
+    .cta-button {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .helping-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .header .logo {
+        font-size: 1.2rem;
+    }
+
+    .header .menu a {
+        font-size: 0.9rem;
+    }
+
+    .header .quote-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .service-content-text h3 {
+        font-size: 2rem;
+    }
+
+    .service-content-text p {
+        font-size: 1rem;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.5rem;
+    }
+
+    .helping-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .helping-section p {
+        font-size: 0.9rem;
+    }
+}
