@@ -1,11 +1,11 @@
-/* Estilos generales */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden
 }
 
-/* Contenedor de fondo para navbar y hero */
+
 .hero-background {
     background-image: url('inicio-1.jpg');
     background-size: cover;
@@ -14,7 +14,6 @@ body {
     color: white;
 }
 
-/* Sección de encabezado */
 .header {
     padding: 20px;
     display: flex;
@@ -44,7 +43,7 @@ body {
     border-radius: 5px;
 }
 
-/* Hero principal */
+
 .hero {
     height: 70vh;
     display: flex;
@@ -73,7 +72,7 @@ body {
     text-decoration: none;
 }
 
-/* Sección de impacto */
+
 .impact-section {
     background-color: black;
     width: 75%;
@@ -110,7 +109,7 @@ body {
     color: gray;
 }
 
-/* Sección de servicios */
+
 .services-section {
     padding-top: 50px;
     padding-bottom: 150px;
@@ -119,11 +118,8 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 95%;
-    height: initial;
-    flex-grow: 0;
-    align-self: initial;
-    flex-wrap: wrap;
+    align-items: center; 
+    width: 100%; 
     transition: background-color 0.3s;
 }
 
@@ -135,9 +131,10 @@ body {
 
 .service-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; 
     flex-wrap: wrap;
     gap: 20px;
+    width: 100%; 
 }
 
 .service-card {
@@ -182,7 +179,7 @@ body {
     background-image: url('dos.jpg');
 }
 
-/* Sección Why Us */
+
 .why-us-section {
     background-color: #f2f2f2;
     padding: 50px 20px;
@@ -415,64 +412,96 @@ body {
     }
 
     .impact-section {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .impact-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .services-section {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
         width: 90%;
-        margin-left: 0;
+        min-width: auto;
+        padding: 20px;
     }
 
-    .services-section h2, .clients-section h2, .testimonials-section h2 {
-        font-size: 1.8rem;
-    }
-
-    .why-us-content, .why-us-experience {
+    .why-us-content,
+    .why-us-experience {
         flex-direction: column;
         text-align: center;
     }
 
-    .why-us-content-text, .why-us-experience-text, 
-    .why-us-image, .why-us-experience-image {
+    .why-us-content-text,
+    .why-us-experience-text,
+    .why-us-image,
+    .why-us-experience-image {
         width: 100%;
     }
-}
 
-.quality-section {
-    background-image: url('inicio-1.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 50px 20px;
-    display: flex;
-    color: black;
-}
+    .clients-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
 
-.quality-content {
-    background-color: white;
-    padding: 30px;
-    max-width: 600px;
-    border-radius: 10px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex-direction: row-reverse;
-}
+    .client-logos {
+        width: 100%;
+        justify-content: center;
+    }
 
-.quality-content h2 {
-    font-size: 2rem;
-    color: #333;
-    margin: 0;
-}
+    .testimonials-section h2 {
+        font-size: 1.8rem;
+    }
 
-.quality-content p {
-    font-size: 1rem;
-    color: #555;
-    margin: 15px 0;
-}
+    .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.quality-btn {
-    background-color: #FFA500;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-}
+    .testimonial-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 
+    .quality-content {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
+    .impact-section {
+        width: 90%; /* Asegura que ocupe la mayor parte del ancho de la pantalla */
+        margin: 0 auto; /* Centra la sección en la pantalla */
+        padding: 20px; /* Reduce el padding para dispositivos pequeños */
+        top: 0; /* Ajusta la posición para eliminar el desplazamiento */
+    }
+
+    .impact-stats {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Centra el contenido */
+        gap: 20px; /* Agrega espacio entre elementos */
+    }
+
+    .impact-stats div {
+        width: 100%; /* Asegura que cada estadística ocupe todo el ancho disponible */
+        max-width: 250px; /* Limita el ancho máximo para una visualización uniforme */
+        margin: 10px 0; /* Espacio vertical entre las tarjetas */
+    }
+}

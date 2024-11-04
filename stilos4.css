@@ -1,17 +1,17 @@
-/* Estilos generales */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Evitar desbordamiento horizontal */
+    overflow-x: hidden; 
 }
 
-/* Contenedor de fondo con imagen para el hero principal */
+
 .hero-background {
-    background-image: url('inicio-1.jpg'); /* Cambia por la ruta de tu imagen de fondo */
+    background-image: url('inicio-1.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
-    height: 70vh; /* Altura del hero */
+    height: 70vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
     padding: 0 20px;
 }
 
-/* Hero principal */
+
 .hero {
     max-width: 800px;
     margin: 0 auto;
@@ -36,13 +36,13 @@ body {
     margin-top: 20px;
 }
 
-/* Encabezado transparente y posicionado arriba */
+
 .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 50px; /* Espaciado para centrar el contenido */
+    padding: 20px 50px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +60,7 @@ body {
     display: flex;
     gap: 15px;
     flex-grow: 1;
-    justify-content: center; /* Centra los enlaces de navegación */
+    justify-content: center; 
 }
 
 .header .menu a {
@@ -81,10 +81,10 @@ body {
     color: white;
     text-decoration: none;
     font-size: 1rem;
-    margin-left: auto; /* Mueve el botón al extremo derecho */
+    margin-left: auto; 
 }
 
-/* Sección Who We Are */
+
 .who-we-are-section {
     background-color: #f2f2f2;
     padding: 50px 20px;
@@ -113,7 +113,7 @@ body {
     border-radius: 10px;
 }
 
-/* Sección Core Qualities */
+
 .core-qualities-section {
     padding: 50px 20px;
     text-align: center;
@@ -257,7 +257,7 @@ body {
     border-radius: 10px;
 }
 
-/* Sección de llamada a la acción */
+
 .helping-section {
     background-image: url('logo-mc.jpg');
     background-size: cover;
@@ -296,7 +296,7 @@ body {
     margin-top: 20px;
 }
 
-/* Footer */
+
 .footer {
     background-color: #333;
     color: white;
@@ -323,7 +323,7 @@ body {
     text-decoration: none;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
@@ -364,8 +364,14 @@ body {
     }
 
     .header .quote-button {
-        width: 100%;
+        display: block;
+        width: 50%;
         text-align: center;
-        margin-top: 10px;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background-color: orange;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
     }
 }
