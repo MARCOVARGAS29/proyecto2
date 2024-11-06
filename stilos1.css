@@ -4,6 +4,10 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 .hero-background {
     background-image: url('inicio-1.jpg');
     background-size: cover;
@@ -74,13 +78,12 @@ body {
     background-color: black;
     width: 75%;
     padding: 50px 20px;
-    text-align: center;
     position: relative;
     top: -50px;
-    margin-left: -5%;
+    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 2;
-    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 .impact-stats {
@@ -99,6 +102,7 @@ body {
     margin: 10px;
     min-width: 150px;
     max-width: 200px;
+    box-sizing: border-box;
 }
 
 .impact-stats div p {
@@ -117,6 +121,7 @@ body {
     align-items: center;
     width: 100%;
     transition: background-color 0.3s;
+    box-sizing: border-box;
 }
 
 .services-section h2 {
@@ -131,6 +136,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .service-card {
@@ -328,7 +334,7 @@ body {
     color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 45%;
+    width: 100%;
     max-width: 500px;
     box-sizing: border-box;
     display: flex;
@@ -434,7 +440,7 @@ body {
     }
 
     .service-card {
-        width: 90%;
+        width: 100%;
         min-width: auto;
         padding: 20px;
     }
@@ -473,13 +479,8 @@ body {
     }
 
     .testimonial-card {
-        width: 90%;
+        width: 100%;
         margin-bottom: 20px;
-    }
-
-    .quality-content {
-        max-width: 100%;
-        padding: 20px;
     }
 
     .footer {

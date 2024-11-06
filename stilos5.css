@@ -301,14 +301,7 @@ body {
     }
 
     .header .quote-button {
-        display: block;
-        width: 50%;
-        text-align: center;
-        margin: 10px auto;
-        padding: 10px 20px;
-        background-color: orange;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
+        display: none;
     }
+
 }
