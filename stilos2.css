@@ -23,7 +23,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    width: 100%; /* Ajuste de ancho */
+    width: 100%;
     overflow: hidden;
 }
 
@@ -31,7 +31,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Ajuste de ancho */
+    width: 100%; 
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -77,7 +77,7 @@ body {
 }
 
 .hero {
-    max-width: 100%; /* Ajuste de ancho */
+    max-width: 100%; 
     margin: 0 auto;
     padding: 0 20px;
     overflow: hidden;
@@ -107,7 +107,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%; /* Ajuste de ancho */
+    width: 100%; 
     overflow: hidden;
 }
 
@@ -166,7 +166,7 @@ body {
     color: white;
     text-align: center;
     padding: 50px 20px;
-    width: 100%; /* Ajuste de ancho */
+    width: 100%; 
     overflow: hidden;
 }
 
@@ -201,7 +201,7 @@ body {
     color: white;
     text-align: center;
     padding: 60px 20px;
-    width: 100%; /* Ajuste de ancho */
+    width: 100%; 
     overflow: hidden;
 }
 
@@ -226,7 +226,7 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    width: 100%; /* Ajuste de ancho */
+    width: 100%; 
     overflow: hidden;
 }
 
@@ -249,7 +249,7 @@ body {
     text-decoration: none;
 }
 
-/* Responsivo para ocultar el botón .btn en pantallas pequeñas */
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;

@@ -357,6 +357,29 @@ body {
     .clients-section {
         flex-direction: column;
         align-items: center;
+        width: 100%; /* Asegura que ocupa todo el ancho */
+        padding: 0; /* Opcional: elimina padding lateral si existe */
+        margin: 0; /* Opcional: elimina margen */
+    }
+
+    .clients-text, .client-logos {
+        max-width: 100%; /* Ocupa todo el ancho en cada sección */
+        text-align: center; /* Opcional: centra el texto */
+    }
+
+    .client-logos {
+        width: 100%; /* Ocupa todo el ancho */
+        display: flex;
+        flex-wrap: wrap; /* Permite que las imágenes se ajusten en filas */
+        justify-content: space-around; /* Distribuye las imágenes a lo largo de todo el ancho */
+        gap: 10px;
+    }
+
+    .client-logos img {
+        flex: 1 1 80px; /* Permite que las imágenes se reduzcan para llenar el espacio */
+        max-width: 80px; /* Controla el tamaño máximo de cada imagen */
+        height: auto;
+        object-fit: contain;
     }
 
     .helping-section h2 {
